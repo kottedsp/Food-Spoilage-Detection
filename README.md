@@ -161,21 +161,3 @@ Input (224×224×3)
 | ROC-AUC | ~0.97 |
 
 *Results vary by dataset and hardware.*
-
----
-
-## Troubleshooting
-
-**`FileNotFoundError: Model not found`** — Run `python src/train.py` first.
-
-**`No images found in data/train`** — Run `python download_dataset.py`.
-
-**Webcam not opening** — Try `--cam 1` to switch to a different camera index.
-
-**GPU not detected** — Ensure CUDA + cuDNN match your TensorFlow version, or training will use CPU (slower but works).
-
----
-
-## License
-
-MIT — free to use for academic and personal projects.
